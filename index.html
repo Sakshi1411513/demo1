@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo Webpage</title>
+        <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-image:url(bg2.jpg);
+            background-position:center;
+            background-size: cover;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top:40px;
+        }
+        .products{
+            width:300px;
+            background-color: azure;
+            margin:auto;
+            color:#1410f0;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius:15px 15px 0px 0px;
+        }
+        .main{
+            background-color: rgb(0,0,0,0.5);
+            width:800px;
+            margin:auto;
+        }
+        form{
+            padding:10px;
+        }
+        #name{
+            width:100%;
+            height:100px;
+        }
+        .name{
+            margin-left: 25px;
+            margin-top: 30px;
+            color: black;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .ProductName{
+            position: relative;
+            left:100px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding:0 22px;
+            font-size: 16px;
+        }
+       .ProductDescription{
+           position: absolute;
+           left:417px;
+           top: -80px;
+           line-height: 40px;
+           border-radius: 6px;
+           padding:0 22px;
+           font-size: 16px;
+           color:#555;
+
+    
+       }
+        </style>
+    
+            
+        
+
+
+
+    <title>ProductsPage</title>
+    
+    </head>
+    <body>
+        <div class="main">
+            <div class="ProductsPage">
+                <h2>Product Details</h2>
+                <form id="ProductsPage"method="post">
+                    <label>Product Name</label>
+                    <br>
+                    <input type="text"name="Productname"id="name"placeholder="Enter Product Name">
+                    <br><br>
+                    <label>Product Description</label>
+                    <br>
+                    <input type="text"name="ProductDescription"id="name"placeholder="Product Description" textarea="30">
+                    <br><br>
+                    <label>Email</label>
+                    <br>
+                    <input type="text"name="Email"id="name"placeholder="Enter Valid Email"required="true">
+                    <br><br>
+                    <label>Seller Contact</label>
+                    <br>
+            <input type="text"name="Contact Number" disabled>
+            <br><br>
+            <label> Launch Date</label>
+            <br>
+            <input type="date"name="Launch Date">
+            <br><br>
+            <label>Product Colors</label>
+            <label>
+                <input type="checkbox"class="radio"value="1">Red
+                <input type="checkbox"class="radio"value="1">Blue
+                <input type="checkbox"class="radio"value="1">Black
+                <input type="checkbox"class="radio"value="1">Yellow
+            </label>
+            <br><br>
+            <label>Product Size</label>
+            <select name="size"id="size">
+                <option value="XS">XS</option>  
+                <option value="S">S</option> 
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+                    
+                   </select>
+                   <br><br>
+                   <label for="myfile">Select a file:</label>
+            <input type="file"id="myfile"name="myfile">
+            <br><br>
+                   <label>In Stock</label>
+            <input type="radio"id="Yes"name="Yes"value="Yes">
+            <label for ="yes">Yes</label>
+            <input type="radio"id="No"name="No"value="No">
+            <label for ="No">No</label>
+            <br><br>
+            <button type="Submit"
+            value="Submit">Submit</button>
+            
+            <button type="Reset"
+            value="Reset">Reset</button>
+            <br><br>
+            
+
+
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
